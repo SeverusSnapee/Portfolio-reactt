@@ -1,0 +1,82 @@
+.contacts>h3{
+font-size: 3rem;
+color: rgb(0, 0, 0);
+text-align: center;
+}
+.contacts{
+ 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(/src/assests/contactbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    
+}
+.container.contact_container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 40% 48%;
+    gap: 12%;
+}
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact_option{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.contact_option:hover{
+    background: rgb(5, 230, 255);
+    border-color: var(--color-primary-variant);
+}
+.contact_option-icon{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+.contact_option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: .7rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: 1000;
+    border-radius: .5rem;
+    background: white;
+    border: 2px solid var(--color-primary-variant);
+    resize:none;
+    color: rgb(0, 0, 0);
+}
+@media  screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .container.contact_container{
+       grid-template-columns: 1fr;
+       gap: 2rem;
+   }
+ 
+}
+
+ @media  screen 
+and (min-device-width : 0px) 
+and (max-device-width : 768px){
+    .container.contact_container{
+    grid-template-columns: 1fr;
+        width: var(--container-width-sm);
+    }
+    }
